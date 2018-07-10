@@ -19,6 +19,7 @@ var hospitalRoutes = require('./routes/hospital');
 var doctorRoutes = require('./routes/doctor');
 var searchRoutes = require('./routes/search');
 var uploadRoutes = require('./routes/upload');
+var imagesRoutes = require('./routes/images');
 
 // Conexión a la base de datos
 mongoose.Promise = global.Promise;
@@ -36,6 +37,7 @@ app.use('/doctor', doctorRoutes);
 app.use('/login', loginRoutes);
 app.use('/search', searchRoutes);
 app.use('/upload', uploadRoutes);
+app.use('/images', imagesRoutes);
 app.use('/', appRoutes);
 
 // Escuchar peticiones
