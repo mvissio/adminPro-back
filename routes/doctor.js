@@ -66,7 +66,7 @@ app.put('/:id', mdAth.verifyToken, (req, res) => {
                     if (err) {
                         return res.status(400).json({
                             status: false,
-                            mensaje: 'Error al actualizar el hospital',
+                            mensaje: 'Error al actualizar el Doctor',
                             errors: err
                         });
                     } else {

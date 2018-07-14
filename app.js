@@ -37,7 +37,7 @@ app.use('/doctor', doctorRoutes);
 app.use('/login', loginRoutes);
 app.use('/search', searchRoutes);
 app.use('/upload', uploadRoutes);
-app.use('/images', imagesRoutes);
+app.use('/img', imagesRoutes);
 app.use('/', appRoutes);
 
 // Escuchar peticiones

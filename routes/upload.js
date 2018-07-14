@@ -13,10 +13,6 @@ app.use(fileUpload());
 app.put('/:tab/:id', (req, res, next) => {
     var tab = req.params.tab;
     var id = req.params.id;
-    console.log(tab);
-    console.log(id);
-    console.log(req.files);
-    console.log(req);
     if (!req.files) {
         return res.status(400).json({
             status: false,
