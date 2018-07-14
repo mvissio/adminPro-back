@@ -14,6 +14,7 @@ var userSchema = new Schema({
     password: {type: String, required: [true, 'La contraseña es requerida']},
     img: {type: String, required: false, default:""},
     role: {type: String, required: [true], default: 'USER_ROLE', enum: roleValides},
+    google: {type: Boolean, default: false}
 });
 
 userSchema.plugin(uniqueValidator, {message: '{PATH} esta asociado a un usuario'});
